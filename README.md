@@ -8,3 +8,8 @@
 ```
 brew install sox fswatch
 ```
+
+## Tip
+
+* To stop playing audio: ctrl-c
+* To kill the auto-player: ctrl-z followed by `kill %`
