@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+require 'securerandom'
+require 'fileutils'
+
+if File.file? "out.wav"
+  FileUtils.mkdir_p "keepers"
+  FileUtils.mv "out.wav", "keepers/#{SecureRandom.hex}.wav"
+else
+  $stderr.puts "Missing out.wav!"
+end
