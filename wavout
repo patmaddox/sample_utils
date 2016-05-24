@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+rm -f out.wav
+echo out.wav
