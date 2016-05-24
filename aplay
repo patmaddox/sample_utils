@@ -14,7 +14,7 @@ function kill_subprocess() {
 }
 
 while true; do
-  fswatch -1 -0 --event Created out.wav | xargs -I {} -0 play {} &
+  fswatch -1 -0 --event Created --event Updated out.wav | xargs -I {} -0 play {} &
   pid=$!
   wait
 done
