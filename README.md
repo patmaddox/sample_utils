@@ -2,18 +2,10 @@
 
 * `aplay`  – looks for a file called `out.wav` and plays it
 * `keepit` - moves `out.wav` to a uniquely-named file under `keepers/`
-
-### Filename utils
-
-* `wavout` and `anaout` – can be used as outfile arguments, to overwrite the
-temporary outfile if desired (CDP doesn't overwrite files)
-* `gospectral` and `gotime` – alternate options to `wavout` and `anaout`.
-`gospectral` and `gotime` configure the `CDP_OVERWRITE_FILE` environment
+* `gospectral` and `gotime` – these configure the `CDP_OVERWRITE_FILE` environment
 variable which CDP uses to allow overwriting a single filename. If you're
 going to run a bunch of spectral commands, you may want to use `gospectral`
-beforehand.
-
-The filename utils should be run with `$()` to execute their contents e.g.
+beforehand. These should be run with `$()` to execute their contents e.g.
 `$(gospectral)`.
 
 ### Example workflow
