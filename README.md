@@ -15,13 +15,13 @@ beforehand. These should be run with `$()` to execute their contents e.g.
 e.g. `rm -f out.wav && modify revecho 1 whoa.wav out.wav 52 .90 0.71 16`
 3. Do you like it? `keepit`
 
+### `aplay` commands
+
+* To stop playing audio: ctrl-c
+* To kill the auto-player: ctrl-z followed by `kill %`
+
 ## Dependencies
 
 ```
 brew install sox fswatch
 ```
-
-## Tips
-
-* To stop playing audio: ctrl-c
-* To kill the auto-player: ctrl-z followed by `kill %`
